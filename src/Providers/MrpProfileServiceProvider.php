@@ -36,7 +36,7 @@ class MrpProfileServiceProvider extends ServiceProvider
         $migrations_path = __DIR__ . '/../copy/views';
         if (file_exists($migrations_path)) {
             $this->publishes([
-                $migrations_path => resource_path('views'),
+                $migrations_path => resource_path('views/mrp-profile'),
             ], 'public');
         }
 

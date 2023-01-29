@@ -2,9 +2,8 @@
 
 namespace MrpProfile\Library;
 
-use App\Contracts\MrpProfile\Row;
-use App\Contracts\MrpProfile\Tab;
-use App\Contracts\Tarifiner\TarifVariant;
+use MrpProfile\Contracts\Row;
+use MrpProfile\Contracts\Tab;
 use App\Library\Tarifiner\Contracts\BaseTarifVariant;
 use App\Models\User;
 use MrProperter\Library\PropertyConfigStructure;
