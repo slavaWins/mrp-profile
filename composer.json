@@ -1,0 +1,28 @@
+{
+    "name": "slavawins/mrp-profile",
+    "description": "Expa",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "slavaWins",
+            "email": "email@example.com",
+            "homepage": "https://github.com/slavaWins/mrp-profile"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MrpProfile\\Providers\\MrpProfileServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "MrpProfile\\": "src"
+        }
+    }
+}
