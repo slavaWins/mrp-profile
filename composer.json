@@ -11,7 +11,8 @@
         }
     ],
     "require": {
-        "php": "^7.3|^8.0"
+        "php": "^7.3|^8.0",
+        "slavawins/mrproperter": "^1.0.1"
     },
     "extra": {
         "laravel": {

@@ -41,5 +41,13 @@ class MrpProfileServiceProvider extends ServiceProvider
         }
 
 
+        $migrations_path = __DIR__ . '/../copy/Library';
+        if (file_exists($migrations_path)) {
+            $this->publishes([
+                $migrations_path => app_path('Library'),
+            ], 'public');
+        }
+
+
     }
 }

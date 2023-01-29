@@ -1,9 +1,7 @@
 <?php
 
-namespace App\Contracts\MrpProfile;
+namespace MrpProfile\Contracts;
 
-
-use App\Contracts\Tarifiner\TarifVariant;
 use App\Models\User;
 use MrProperter\Library\PropertyConfigStructure;
 

@@ -1,7 +1,6 @@
 <?php
 
-namespace App\Library\MrpProfile;
-
+namespace MrpProfile\Library;
 
 use App\Contracts\MrpProfile\Row;
 use App\Contracts\MrpProfile\Tab;
