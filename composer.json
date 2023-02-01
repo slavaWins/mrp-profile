@@ -12,7 +12,9 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "slavawins/formbuilder": "*"
+        "slavawins/formbuilder": "*",
+        "slavawins/mrproperter": "*",
+        "slavawins/easyapi": "*"
     },
     "extra": {
         "laravel": {
