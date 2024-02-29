@@ -3,9 +3,6 @@
 
 namespace MrpProfile\Contracts;
 
-use App\Models\User;
-use MrProperter\Library\PropertyConfigStructure;
-
 class Tab
 {
 
@@ -16,6 +13,8 @@ class Tab
     public $view = null;
     public $formTag = null;
     public $ajax = false;
+    public $descriptionBefore = null;
+    public $descriptionAfter = null;
 
     public function SetAjax($val)
     {
@@ -34,6 +33,19 @@ class Tab
     public function SetTag($tag)
     {
         $this->formTag = $tag;
+        return $this;
+    }
+
+
+    public function SetAfterDescription($text)
+    {
+        $this->descriptionAfter = $text;
+        return $this;
+    }
+
+    public function SetBeforeDescription($text)
+    {
+        $this->descriptionBefore = $text;
         return $this;
     }
 

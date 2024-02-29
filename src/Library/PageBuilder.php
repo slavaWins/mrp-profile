@@ -40,6 +40,13 @@ class PageBuilder
 
     public function AddRow($label)
     {
+        foreach (  $this->rows as $K=>$V){
+            if($V->label==$label){
+                $this->currentRow = $K;
+                return $this;
+            }
+        }
+
         $key = md5($label);
 
         $row = new Row();
