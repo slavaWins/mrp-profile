@@ -1,6 +1,6 @@
 {
     "name": "slavawins/mrp-profile",
-    "description": "Expa",
+    "description": "Extend mpr for profile page generation",
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [

@@ -9,6 +9,8 @@ class Row
 {
 
     public $label = "Настройки";
+    public ?string $description = null;
+    public ?string $icon = null;
 
     /** @var Tab[] $tabs  */
     public $tabs = [];

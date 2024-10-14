@@ -35,9 +35,18 @@ class PageBuilder
         $tab = new Tab();
         $tab->label = $label;
         $this->rows[$this->currentRow]->tabs[] = $tab;
+        
         return $tab;
     }
 
+    public function SetRowDescription($description){
+        $this->currentRow->description = $description;
+    }
+    
+    public function SetRowIcon($iconUrlImg){
+        $this->currentRow->icon = $iconUrlImg;
+    }
+        
     public function AddRow($label)
     {
         foreach (  $this->rows as $K=>$V){
@@ -51,6 +60,7 @@ class PageBuilder
 
         $row = new Row();
         $row->label = $label;
+        $row->description = "";
 
         $this->rows[] = $row;
         $this->currentRow = count($this->rows) - 1;
