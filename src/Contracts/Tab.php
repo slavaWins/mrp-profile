@@ -13,6 +13,7 @@ class Tab
     public $label = "Вкладка";
     public $view = null;
     public $formTag = null;
+    public $buttonText = null;
     public $ajax = false;
     public $descriptionBefore = null;
     public $shortDescription = null;
@@ -36,6 +37,13 @@ class Tab
     public function SetTag($tag)
     {
         $this->formTag = $tag;
+        return $this;
+    }
+
+
+    public function SetButtonText($txt)
+    {
+        $this->buttonText = $txt;
         return $this;
     }
 
