@@ -11,12 +11,14 @@ class Tab
     public $title = null;
     public $icon = null;
     public $label = "Вкладка";
+    public $tabCustomLabel = null;
     public $view = null;
     public $formTag = null;
     public $buttonText = null;
     public $ajax = false;
     public $descriptionBefore = null;
     public $shortDescription = null;
+    public $descriptionTab = null;
     public $descriptionAfter = null;
     public $headerBackground = null;
 
@@ -47,6 +49,16 @@ class Tab
         return $this;
     }
 
+    public function SetCustomTabLabel($text)
+    {
+        $this->tabCustomLabel = $text;
+        return $this;
+    }
+    public function SetTabDescription($text)
+    {
+        $this->descriptionTab = $text;
+        return $this;
+    }
 
     public function SetAfterDescription($text)
     {
@@ -98,6 +110,7 @@ class Tab
      */
     public function GetShortDescriptionOrBefore()
     {
+        if($this->descriptionTab!==null)return $this->descriptionTab;
         if($this->shortDescription)return $this->shortDescription;
         return self::ExtractSentences((  $this->descriptionAfter ?? "") ." ".( $this->descriptionBefore ?? ""), 100);
     }
